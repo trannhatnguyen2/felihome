@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-signin-client_id" content="111395733142-abligcdfp07savg594bqagdiqvff8g0t.apps.googleusercontent.com">
+    <title>Hotel</title>
+    
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/favicon.png"> 
+    <!-- Stylesheet -->
+    <!-- <link rel="stylesheet" href="./style.css">
+  	<link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./css/dist/AdminLTE.min.css"> -->
+
+    <link rel="stylesheet" href="/BoardingHouse/login/style.css">
+  	<link rel="stylesheet" href="/BoardingHouse/login/style1.css">
+    <link rel="stylesheet" href="/BoardingHouse/login/css/dist/AdminLTE.min.css">
+    <style>
+        .login-container{
+            margin-top: 5%;
+            margin-bottom: 8%;
+            text-align:center;
+            padding:0px 40px;
+        }
+        .login-form-1{
+            border-top:3px solid #1cc3b2;
+            padding: 2%;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+        }
+        .login-form-1 h3{
+            text-align: center;
+            color: #333;
+        }
+        .login-form-2{
+            padding: 2%;
+            border-top:3px solid #1cc3b2;
+            background: #1cc3b2;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+        }
+        .login-form-2 h3{
+            text-align: center;
+            color: #fff;
+        }
+        .login-container form{
+            padding: 5%;
+        }
+        .btnSubmit
+        {
+            width: 100%;
+            height:40px;
+            border-radius: 2rem;
+            padding: 3%;
+            border: none;
+            cursor: pointer;
+        }
+        .login-form-1 .btnSubmit{
+            font-weight: 600;
+            color: #fff;
+            background-color: #1cc3b2;
+        }
+        .login-form-2 .btnSubmit{
+            font-weight: 600;
+            color: #1cc3b2;
+            background-color: #fff;
+        }
+        .login-form-2 .ForgetPwd{
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .login-form-1 .ForgetPwd{
+            color: #1cc3b2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .form-control:focus {
+            border-color: #1cc3b2;
+            box-shadow: 0 0 0 0.1rem #68f7e8;
+        }
+        ul li .btn{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        <!-- Menu -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+    <div class="container login-container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 login-form-1">
+                <h3>Login</h3>
+                <h6 style="color:red"></h6>
+                <form method="post" action="" autocomplete="off">
+                    <input type="hidden" name="grtk" id="grtk" value="">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control" placeholder="Enter Username *" value="" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Enter Password *" value="" required/>
+                    </div>
+                    <input type="hidden" name="csrf_token" value="1653758097223cf7381aa39faf53e98a7a951ee759983b1b13a589be34343a1384a8c76b02">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <input type="submit" name="login" class="btnSubmit" value="Login"/>
+                        </div>
+                    </div>
+                </form>
+                <form method="post" action="" style="padding-top:0px;">
+                    <button type="submit" style="border-radius:50px;" name="glogin" class="btn btn-block btn-danger text-center">
+                        <i class="fa fa-google-plus" style="margin-right:10px;"></i>Login with Google
+                    </button>
+                </form>
+                <form method="post" action="admin/forgotPassword.php" style="padding:0px;">
+                    <input type="submit" class="btn" value="Forgot Password" />
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="./js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="./js/default-assets/active.js"></script>
+    <!--AIzaSyDFJeOaO0pT57aoGfOZ4dk1o2vY8XYamu4-->
+    
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LcKGPUcAAAAAIL4wB3NMpKRtxmVLa3FTp3daNai"></script> -->
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){    
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcKGPUcAAAAAIL4wB3NMpKRtxmVLa3FTp3daNai', {action: 'submit'}).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                    var res = document.getElementById("grtk");
+                    res.value = token;
+                });
+            });
+        });
+    </script> -->
+
+    <script>
+        function OTP(val){
+            // var email = document.getElementById("otp_email").value();
+            console.log(val);
+        }
+    </script>
+    
+  <!--<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>-->
+</body>
+</html>
